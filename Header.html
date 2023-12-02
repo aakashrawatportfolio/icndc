@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="Header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+  
+</style>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="indexs.html" class="nav-logo">
+        <img
+          src="Images/Salesclove-logo.webp"
+          alt="Logo"
+          width="200px"
+          height="50px"
+        />
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item">
+          <a href="indexs.html" class="nav-link" onclick="closeMobileMenu()">
+            Home
+          </a>
+        </li>
+        <!-- Courses Dropdown -->
+        <li
+          class="nav-item courses-dropdown"
+          onmouseover="showCourses()"
+          onmouseout="hideCourses()"
+        >
+          <a class="#">About </a>
+          <div class="courses-dropdown-content" id="coursesDropdown">
+            <ul>
+              <li>
+                <a href="ISNT.html" onclick="closeMobileMenu()"
+                  >ISNT</a
+                >
+              </li>
+              <li>
+                <a href="ICNDT.html" onclick="closeMobileMenu()"
+                  >ICNDT</a
+                >
+              </li>
+              <li>
+                <a href="Organising Committees.html" onclick="closeMobileMenu()"
+                  >Organising Committee</a
+                >
+              </li>
+              
+              
+            </ul>
+          </div>
+        </li>
+        <!-- End Courses Dropdown -->
+        <li
+        class="nav-item courses-dropdown"
+        onmouseover="showProgram()"
+        onmouseout="hideProgram()"
+      >
+        <a class="#"> Program</a>
+        <div class="courses-dropdown-content" id="coursesDropdown">
+          <ul>
+            <li>
+              <a href="Keydates.html" onclick="closeMobileMenu()"
+                >Key Dates</a
+              >
+            </li>
+            <li>
+              <a href="Confress theme.html" onclick="closeMobileMenu()"
+                >Conference   theme</a
+              >
+            </li>
+            <li>
+              <a href="Agenda.html" onclick="closeMobileMenu()"
+                >Agenda</a
+              >
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="Abstract.html" class="nav-link" onclick="closeMobileMenu()">
+       Abstract
+        </a>
+      </li>
+        <li
+        class="nav-item courses-dropdown"
+        onmouseover="showlocation()"
+        onmouseout="hidelocation()"
+      >
+        <a class="#">Location</a>
+        <div class="courses-dropdown-content" id="coursesDropdown">
+          <ul>
+            <li>
+              <a href="Confress theme.html" onclick="closeMobileMenu()"
+                >Conference  Theme</a
+              >
+            </li>
+            <li>
+              <a href="Explore banglore.html" onclick="closeMobileMenu()"
+                >Explore  Bengaluru</a
+              >
+            </li>
+            <li>
+              <a href="Visa Information.html" onclick="closeMobileMenu()"
+                >Visa Information</a
+              >
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <li
+      class="nav-item courses-dropdown"
+      onmouseover="showSponsership()"
+      onmouseout="hideSponsership()"
+    >
+      <a class="#">Sponsorship & Exihibition</a>
+      <div class="courses-dropdown-content" id="coursesDropdown">
+        <ul>
+          <li>
+            <a href="Exhibition.html" onclick="closeMobileMenu()"
+              >Exhibition</a
+            >
+          </li>
+          <li>
+            <a href="tarrif.html" onclick="closeMobileMenu()"
+              >Tarrif</a
+            >
+          </li>
+          <li>
+            <a href="sponsersip opportunity.html" onclick="closeMobileMenu()"
+              >Sponsor Opportunities</a
+            >
+          </li>
+
+        </ul>
+      </div>
+    </li>
+        <li class="nav-item">
+          <a
+            href="Contact us.html"
+            class="nav-link"
+            onclick="closeMobileMenu()"
+          >
+          Contact Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="Registration.html"
+            class="btn"
+            style="color: #ffffff"
+            onclick="closeMobileMenu()"
+            >Registration</a
+          >
+        </li>
+      </ul>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <nav class="navbar-fixed">
+      <a href="indexs.html" class="nav-logo">
+        <img
+          src="Images/Salesclove-logo.webp"
+          alt="Logo"
+          width="200px"
+          height="50px"
+        />
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item">
+          <a href="indexs.html" class="nav-link" onclick="closeMobileMenu()">
+            Home
+          </a>
+        </li>
+        <!-- Courses Dropdown -->
+        <li
+          class="nav-item courses-dropdown"
+          onmouseover="showCourses()"
+          onmouseout="hideCourses()"
+        >
+          <a class="about"> About </a>
+          <div class="courses-dropdown-content" id="coursesDropdown">
+            <ul>
+              <li>
+                <a href="ISNT.html" onclick="closeMobileMenu()"
+                  >ISNT</a
+                >
+              </li>
+              <li>
+                <a href="ICNDT.html" onclick="closeMobileMenu()"
+                  >ICNDT</a
+                >
+              </li>
+              <li>
+                <a href="Organising Committees.html" onclick="closeMobileMenu()"
+                  >Organising Committee</a
+                >
+              </li>
+              
+              
+            </ul>
+          </div>
+        </li>
+        <!-- End Courses Dropdown -->
+        <li
+        class="nav-item courses-dropdown"
+        onmouseover="showProgram()"
+        onmouseout="hideProgram()"
+      >
+        <a class="#"> Program</a>
+        <div class="courses-dropdown-content" id="coursesDropdown">
+          <ul>
+            <li>
+              <a href="Keydates.html" onclick="closeMobileMenu()"
+                >Key Dates</a
+              >
+            </li>
+            <li>
+              <a href="Confress theme.html" onclick="closeMobileMenu()"
+                >Conference  Theme</a
+              >
+            </li>
+            <li>
+              <a href="Agenda.html" onclick="closeMobileMenu()"
+                >Agenda</a
+              >
+            </li>
+
+          </ul>
+        </div>
+      </li>
+        <li class="nav-item">
+          <a href="Abstract.html" class="nav-link" onclick="closeMobileMenu()">
+         Abstract
+          </a>
+        </li>
+        <li
+        class="nav-item courses-dropdown"
+        onmouseover="showlocation()"
+        onmouseout="hidelocation()"
+      >
+        <a class="#">Location</a>
+        <div class="courses-dropdown-content" id="coursesDropdown">
+          <ul>
+            <li>
+              <a href="Confress theme.html" onclick="closeMobileMenu()"
+                >Conference  Venue</a
+              >
+            </li>
+            <li>
+              <a href="Explore banglore.html" onclick="closeMobileMenu()"
+                >Explore  Bengaluru</a
+              >
+            </li>
+            <li>
+              <a href="Visa Information.html" onclick="closeMobileMenu()"
+                >Visa Information</a
+              >
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <li
+      class="nav-item courses-dropdown"
+      onmouseover="showSponsership()"
+      onmouseout="hideSponsership()"
+    >
+      <a class="#">Sponsorship & Exihibition</a>
+      <div class="courses-dropdown-content" id="coursesDropdown">
+        <ul>
+          <li>
+            <a href="Exhibition.html" onclick="closeMobileMenu()"
+              >Exhibition</a
+            >
+          </li>
+          <li>
+            <a href="tarrif.html" onclick="closeMobileMenu()"
+              >Tarrif</a
+            >
+          </li>
+          <li>
+            <a href="sponsersip opportunity.html" onclick="closeMobileMenu()"
+              >Sponsor Opportunities</a
+            >
+          </li>
+
+        </ul>
+      </div>
+    </li>
+        <li class="nav-item">
+          <a
+            href="Contact us.html"
+            class="nav-link"
+            onclick="closeMobileMenu()"
+          >
+          Contact Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="Registration.html"
+            class="btn"
+            style="color: #ffffff"
+            onclick="closeMobileMenu()"
+            >Registration</a
+          >
+        </li>
+      </ul>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <script>
+    function toggleMobileMenu() {
+var navMenu = document.getElementById("navMenu");
+var fixedNavbar = document.querySelector(".navbar-fixed");
+navMenu.classList.toggle("active");
+// fixedNavbar.style.display = 'none'; // Hide fixed navbar when mobile menu is toggled
+}
+
+function closeMobileMenu() {
+// Get the mobile menu element by its ID
+var mobileMenu = document.getElementById("navMenu");
+var fixedNavbar = document.querySelector(".navbar-fixed");
+
+// Check if the mobile menu is open
+if (mobileMenu.classList.contains("active")) {
+// If open, close the menu by removing the 'active' class
+mobileMenu.classList.remove("active");
+fixedNavbar.style.display = "block"; // Show fixed navbar when mobile menu is closed
+}
+}
+
+window.addEventListener("scroll", function () {
+var scrollPosition = window.scrollY;
+var fixedNavbar = document.querySelector(".navbar-fixed");
+
+// You can adjust the scroll threshold as needed
+var scrollThreshold = 100;
+
+if (scrollPosition > scrollThreshold) {
+fixedNavbar.style.display = "";
+} else {
+fixedNavbar.style.display = "none";
+}
+
+// Close mobile menu if open
+closeMobileMenu();
+});
+
+//nav-dropdown
+function showCourses() {
+document.getElementById("coursesDropdown").style.display = "block";
+}
+
+function hideCourses() {
+document.getElementById("coursesDropdown").style.display = "none";
+}
+
+  </script>
+
+</body>
+
+</html>

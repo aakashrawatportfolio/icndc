@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstarct</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+      body{
+  background: #FFF1E8;
+}
+    .container {
+    display: inline-block;
+    
+  }
+ 
+
+  .text {
+    font-size: 15px;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(10),
+    cursor .4s step-end infinite alternate
+  }
+  @keyframes cursor {
+    50%{ border-color:transparent}
+  }
+  @keyframes typing {
+    from{ width:0}
+    
+  }
+</style>
+<script>
+    $(function () {
+      // Include header
+      $('#header').load('header.html');
+  
+      // Include footer
+      $('#footer').load('footer.html');
+    });
+  </script>
+<body>
+    <div id="header"></div>
+    <main style="text-align: center; padding-top: 50px;">
+      <div style="padding-top: 50px; padding-left: 50px; "   class="container">
+        <H1 style="font-size: 60px; text-align: center; color: #BF4A1F;" class="text">Coming soon ...!</H1>
+      </div>
+        <!-- Other content -->
+    </main>
+
+
+    <div id="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+      });
+    </script>
+</body>
+</html>

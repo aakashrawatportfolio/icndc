@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Reference Bootstrap CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="path_to_css/bootstrap.min.css">
+
+  <!-- Reference Bootstrap JS Bundle (includes Popper.js) -->
+  <script src="path_to_js/bootstrap.bundle.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/abouts/about-1/assets/css/about-1.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    @keyframes typing {
+    from { width: 0; }
+    to { width: calc(100% + 0.15em); }
+  }
+
+  h4 {
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: typing 3s steps(11, end) infinite;
+    background: #fff1e8;
+  }
+</style>
+<script>
+  $(function () {
+    // Include header
+    $('#header').load('header.html');
+
+    // Include footer
+    $('#footer').load('footer.html');
+  });
+</script>
+
+<body style="background-color: #fff1e8 ;">
+  <div id="header"></div>
+  <!-- About 1 - Bootstrap Brain Component -->
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image Section -->
+
+      <!-- Text Section -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="d-flex flex-column">
+                <img class="img-fluid rounded w-75 align-self-end"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjv8k9FpJH5AvquxbVyd06B5UludsXYeHuTLTGllucw&s"
+                  alt="">
+                <img class="img-fluid rounded w-50 bg-white pt-3 pe-3"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjv8k9FpJH5AvquxbVyd06B5UludsXYeHuTLTGllucw&s"
+                  alt="" style="margin-top: -25%;">
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+              <div class="animation-text">
+                <h4 style="display: inline-block; overflow: hidden; border-right: .15em solid; color: #BF4A1F; font-weight: bold;">About ISNT ...</h4>
+              </div>
+              <div class="text-content">
+                <div class="">
+                  <p> The Indian Society for Non-Destructive Testing (ISNT) is a non-profit, professional body of
+                    technologists, engineers, scientists, academicians and researchers in India, who are engaged in the
+                    field of non-destructive testing. Since its inception in the year 1972, it has matured and
+                    established itself at the international level having stature and recognition. Currently, ISNT has
+                    nearly 5000+ members spread over 19 chapters in India covering all the demographic zones with its
+                    headquarters being located at Chennai, India.
+                    <span>liber molestias architecto a accusamus facilis!</span>
+                  </p>
+                </div>
+                <div style="margin-top: 45px;" class="box">
+                  <p> ISNT has the primary responsibility of promoting the awareness of NDT science and technology
+                    through education, research and exchange of technical information within the country and
+                    internationally to its members and other professionals. ISNT accomplishes this through its other
+                    organizational arms – Training Management Board (TMB), National Certification Board (NCB), Program
+                    Formulation and Management board (PFMB).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-text">
+      <p>TMB has the primary responsibility of standardizing and harmonizing NDT training for Level 1, 2 and 3 in
+        various methods. NCB takes the lead in certification of NDT professionals in India through a rigorous
+        examination process across the country. The main objectives of PFMB are to conceptualize, formulate and organise
+        various non-certification programs such as Webinars, Workshops, Conferences, Seminars etc. and create a platform
+        for constant interaction with industry, academia and research community.</p>
+    </div>
+    <div class="main-text">
+      <p>Quality through Non-Destructive Evaluation Science and Technology (QUNEST) is another body of ISNT formed to:
+        Identify NDE issues and thrust areas; Foster NDE Science and Technology nationally with international inputs;
+        Continuing Education and enhance international standing and make ISNT a global player.</p>
+    </div>
+    <div class="main-text">
+      <p>ISNT is the sole and the largest professional body in India for NDE professionals and keeps the members
+        informed about technological advances, new products, certification and training and international linkages. It
+        also helps to promote the use of approved international and national standards in NDE and related areas by
+        Indian industry in consultation with the Bureau of Indian Standards. ISNT co-ordinates and collaborates with
+        universities, academic institutions and government bodies for initiating new projects on the development of
+        various NDE techniques.</p>
+    </div>
+    <div class="main-text">
+      <p>ISNT publishes a rich content packed quarterly journal – “Journal of NDE” with wide circulation and also books
+        on various NDT related topics to enrich the members with the latest information on technology, products, patents
+        and related topics.</p>
+    </div>
+    <div class="main-text">
+      <p>ISNT organizes its flagship event the “Annual Conference and Exhibition on NDE” every year during December
+        first week at different cities of India with a massive participation of speakers, delegates and exhibitors from
+        all segments of the profession.</p>
+    </div>
+  </div>
+    <div id="footer"></div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+      });
+    </script>
+</body>
+
+</html>

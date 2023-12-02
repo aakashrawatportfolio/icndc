@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abstarct</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+      body{
+  background: #FFF1E8;
+}
+  body{
+    background: #FFF1E8;
+  }
+  .visa-info {
+    background-color: #BF4A1F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Animation */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animation to the text */
+  .visa-info h1 {
+    animation: slideIn 1s ease forwards;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .visa-info {
+      padding: 10px;
+    }
+  }
+  .paragraph {
+
+  line-height: 1.6;
+  padding: 20px;
+ 
+  border-radius: 5px;
+}
+
+.paragraph p {
+  margin-bottom: 15px;
+}
+
+.paragraph a {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .paragraph {
+    padding: 15px;
+  }
+}
+
+</style>
+<script>
+  $(function () {
+    // Include header
+    $('#header').load('header.html');
+
+    // Include footer
+    $('#footer').load('footer.html');
+  });
+</script>
+
+<body>
+  <div id="header"></div>
+  <div class="visa-info">
+    <h1>Visa Information</h1>
+  </div>
+  <div class="paragraph">
+    <p>"It is necessary for International participants to obtain a visa to attend the SAFETY 2024, you can find relevant
+      information about the application process on the following website: <a href="https://indianvisaonline.gov.in">https://indianvisaonline.gov.in</a></p>
+    <p>An official letter of invitation to obtain a visa and authorization to attend the conference will be issued only
+      after the completion of the paid conference registration.</p>
+    
+  <p>We will bring more updates for you!"</p>
+    </div>
+
+
+  <div id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $('#header').load('header.html');
+      $('#footer').load('footer.html');
+    });
+  </script>
+</body>
+
+</html>

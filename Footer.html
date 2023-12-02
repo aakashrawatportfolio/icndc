@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.footer {
+  position: 600px fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #A3421E;
+  color: #fff;
+  display: flex;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer-section h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section input[type="email"] {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.footer-section button {
+  padding: 8px 20px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .fixed-footer {
+    flex-direction: column;
+  }
+}
+
+</style>
+<body>
+    <div class="content">
+        <!-- Your main content goes here -->
+      </div>
+      
+      <footer class="footer">
+        <div class="footer-section contact-info">
+          <h2>Company Logo & Details</h2>
+          <p>abx company</p>
+          <!-- Contact information goes here -->
+        </div>
+        <div class="footer-section navigation-links">
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <!-- Other navigation links -->
+          </ul>
+        </div>
+        <div class="footer-section newsletter">
+          <h2>Subscribe to Newsletter</h2>
+          <form action="#">
+            <!-- Newsletter form goes here -->
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer-section get-in-touch">
+          <h2>Get in Touch</h2>
+          <!-- Contact details or social media links -->
+        </div>
+      </footer>
+      
+</body>
+</html>

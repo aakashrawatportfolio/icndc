@@ -1,0 +1,421 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+
+
+@media (max-width: 480px) {
+  nav a {
+    margin: 5px;
+    font-size: 0.9em; /* Adjust font size for smaller screens */
+  }
+} */
+
+/* banner css */
+.banner img {
+  max-width: 100%; /* Ensures the image doesn't exceed its container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1263px) {
+  .banner img {
+    width: 100%; /* Adjust as needed */
+  }
+}
+
+/* Additional media queries for smaller screens */
+@media (max-width: 768px) {
+  .banner img {
+    /* Adjust width for smaller screens */
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner img {
+    /* Adjust width for even smaller screens */
+    width: 100%;
+  }
+}
+
+h1 {
+  font-family: sans-serif;
+  margin: 35px auto;
+  color: #bf4a1f;
+  text-align: center;
+  font-size: 30px;
+  max-width: 600px;
+  position: relative;
+}
+
+h1:before,
+h1:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: #bf4a1f;
+  position: absolute;
+  top: 50%;
+}
+
+h1:before {
+  left: 0;
+}
+
+h1:after {
+  right: 0;
+}
+
+.test {
+  height: 200px;
+  width: 100%; /* Adjust width to fit the screen */
+  max-width: 600px;
+  margin: 0 auto; /* Center the element */
+  background-color: #bf4a1f;
+}
+
+.row {
+  text-align: center;
+}
+
+.row p {
+  
+  font-size: 15px;
+}
+
+.animated-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-text::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #bf4a1f;
+  animation: animateLine 3s linear infinite; /* Animation properties */
+}
+
+@keyframes animateLine {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  51% {
+    width: 0;
+    left: 100%;
+  }
+  100% {
+    width: 0;
+    left: 0;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 25px;
+    margin: 25px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-text {
+    font-size: 20px;
+    margin: 15px auto;
+  }
+}
+
+/* slider css start from here  */
+.slider {
+  margin-bottom: 50px;
+  margin-top: 80px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #bf4a1f;
+}
+
+.slider p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 18px 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.text{
+    text-align: center;
+}
+.bold-text {
+  text-align: center;
+}
+
+.bold-text h2 {
+  color: #bf4a1f;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1.5; /* Set the line height for the entire text */
+}
+
+.bold-text .separator {
+  display: flex;
+  align-items: center;
+  margin: 0 8px; /* Adjust this margin to control the gap on both sides */
+}
+
+.bold-text .separator span {
+  margin: 0 5px; /* Adjust this margin to control the space around the '+' sign */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .bold-text h2 {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bold-text h2 {
+    font-size: 25px; /* Adjust font size for even smaller screens */
+  }
+}
+
+  /* about section start from here */
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .image {
+    flex: 1;
+    max-width: 100%;
+    margin-right: 5px;
+   margin-left: 30px;
+  }
+
+  .text-content {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .image,
+    .text-content {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .last{
+   
+    background-color: #bf4a1f;
+    color: white;
+  }
+  h3 {
+    margin-top: 40px;
+    font-family: sans-serif;
+    margin: 35px auto;
+    color: #fff1e8;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  h3:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #fff1e8;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  h3:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #fff1e8 ;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #bf4a1f;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: #fff1e8;
+    border-radius: 10px;
+    color: #bf4a1f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.3s; /* Add color transition */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: #f18e6a;
+    color: #fff1e8; /* Change color on hover */
+  }
+  
+  .circle-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle-image img {
+    padding-top: 30px;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+  
+  .card-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+/* For webkit-based browsers */
+/* Width and height are necessary to see the scrollbar */
+/* You can adjust the colors and other properties as needed */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (the area on which the thumb rests) */
+::-webkit-scrollbar-track {
+ 
+  background: #fff1e8;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #bf4a1f;
+ 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bf4a1f;
+}
+/* start here client css */
+.cont{
+width: 100%;
+min-height: 100vh;
+background: #fff1e8;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.testimonial{
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+.testimonial-text{
+  background-color: #bf4a1f;
+  color: #fff1e8;
+  width: 100%;
+  height: 350px;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 15px 20px rgba(red, green, blue, 0.2);
+}
+.user-text{
+  width: 80%;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+.user-text.fa-solid {
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.user-text span{
+  display: block;
+}
+.user-text span{
+  display: block;
+  font-size: 13px;
+  margin-top: 70px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.testimonial-pic{
+  margin-top: 30px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+}
+.user-pic{
+  width: 65px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+.user-text.active-text{
+  display: block;
+}
+.user-pic.active-pic{
+  width: 100px;
+  border: 3px solid #bf4a1f;
+}
+  
